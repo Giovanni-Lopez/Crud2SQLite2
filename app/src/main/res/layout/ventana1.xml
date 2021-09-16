@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="30dp"
+    android:background="#ffffff"
+    tools:context=".ventana1">
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Busqueda por codigo"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="55dp"
+        android:background=""
+        android:drawableLeft="@drawable/ic_edit"
+        android:paddingStart="5dp"
+        android:hint="  Ingrese el còdigo"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:paddingLeft="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="90dp"
+           android:text="Buscar"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#2314A8"
+            android:shadowDx="-3"
+            android:shadowDy="0"
+            android:shadowRadius="8"
+            android:drawableStart="@drawable/ic_busc"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:drawablePadding="0dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="-150sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#FF0000"
+                android:text="X"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/ic_circule"
+                android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
